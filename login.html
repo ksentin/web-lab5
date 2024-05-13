@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="adaptive-styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="search-field">
+        <div class="with-border"><p>Головна</p></div>
+        <div class="with-border"><p>Каталог</p></div>
+        <div class="with-border"><p>Новини</p></div>
+        <div><p>Про нас</p></div>
+        <div class="button">
+            <img src="images/bascket_icon.png" alt="Кошик" class="cart-icon">
+            <div class="buttontext">Вхід</div>
+        </div>
+    </header>
+    
+    <main class="Signin">
+        <h2>Вхід</h2>
+        <form id="signinForm">
+            <div class="form-row">
+                <div class="form-group-signin">
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group-signin">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+            <button type="submit">Увійти</button>
+            <div class="button">
+                <div class="buttontext">Не зареєстровані? <br><a href="registration.html">Зареєструватися</a></div>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footer-column">
+            <a href="/home" target="_blank"><p>Головна</p></a>
+            <a href="/catalog" target="_blank"><p>Каталог</p></a>
+            <a href="/news" target="_blank"><p>Новини</p></a>
+            <a href="/about" target="_blank"><p>Про нас</p></a>
+        </div>        
+        <div class="footer-center">
+            <p>Books for all</p>
+            <p>2024</p>
+        </div>
+        <div class="footer-column">
+            <a href="https://www.instagram.com/" target="_blank"><p>Instagram</p></a>
+            <a href="https://www.facebook.com/" target="_blank"><p>Facebook</p></a>
+            <a href="https://twitter.com/" target="_blank"><p>Twitter</p></a>
+            <a href="https://www.tiktok.com/" target="_blank"><p>TikTok</p></a>
+        </div>
+    </footer>
+</body>
+</html>

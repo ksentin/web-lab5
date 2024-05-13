@@ -1,0 +1,527 @@
+@font-face {
+    font-family: 'Italiana-Regular';
+    src: url('fonts/Italiana-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivTypeSerif-Medium';
+    src: url('fonts/KyivTypeSerif-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivTypeSerif-Regular';
+    src: url('fonts/KyivTypeSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KyivTypeTitling';
+    src: url('fonts/KyivTypeTitling-Bold3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('images/background.png');
+    height: 100%;
+    width: auto;
+    display: flex; /* Зробимо body flex-контейнером */
+    flex-direction: column;
+    justify-content: center; /* Вирівняємо елементи по центру горизонталі */
+    align-items: center; /* Вирівняємо елементи по центру вертикалі */
+    margin-left: 60px; /* Скинемо зовнішні відступи */
+    margin-right: 60px;
+}
+
+* {
+    background-color: #00000000;
+}
+
+/* start header */
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #000;
+    margin-left: 20px; /* Відступи зліва */
+    margin-right: 20px;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border-bottom: 2px solid #000;
+    margin-left: 100px;
+    margin-right: 100px; 
+    align-items: center;
+}
+
+header div {
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header .with-border {
+    border-right: 1px solid #000;
+}
+
+header p {
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .button {
+    display: inline-flex;
+    margin-left: auto;
+    width: 200px;
+}
+
+.cart-icon {
+    margin-right: 5px;
+    width: 35%;
+    height: auto;
+}
+
+header .buttontext {
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+header .buttontext:hover {
+    transform: translateY(-5px);
+}
+
+header img:hover {
+    transform: translateY(-5px);
+}
+
+/* end header */
+
+
+/* start footer */
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    text-align: center;
+    color: black;
+}
+
+footer a[href^="/"] {
+    color: rgb(25, 25, 55);
+}
+
+.footer-column a {
+    text-decoration: none;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    text-align: center;
+    color: black;
+    margin-top: 25px; 
+}
+/* end footer */
+
+/* start main */
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+}
+
+.bestchoice{
+    font-family: 'KyivTypeSerif-Medium';
+    color: #CC6E00;
+    font-size: 21px;
+}
+
+.highlight {
+    color: #CC6E00;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.intro img {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.intro .name{
+    font-size: 140px;
+    font-family: 'KyivTypeTitling';
+}
+
+.title{
+    height: auto;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.title p {
+    margin: 0;
+    text-align: left;
+}
+
+.titletext{
+    font-family: 'KyivTypeSerif-Regular';
+    width: 60%;
+}
+
+
+/* start search field */
+.search-field {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    padding: 10px;
+    width: 600px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid #c27100;
+}
+
+.search-button {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #CC6E00;;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #f8cfa1;;
+}
+
+.filter-select {
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #CC6E00;;
+    font-size: 16px;
+}
+
+.search-input,
+.filter-select,
+.search-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/* end search field */
+
+
+/*start catalog*/
+h3{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border: #CC6E00;
+    border-style: double;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    background-color: #FFDE89;
+}
+
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16),
+    0 3px 6px rgba(0, 0, 0, 16);
+    transform: translate(0px, -8px);
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 0 8px;
+}
+
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+button{
+    text-align: center;
+    font-size: 24px;
+    color: aliceblue;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #CC6E00;
+}
+/*end catalog*/
+
+
+
+
+
+
+
+
+.Signup, .Signin {
+    max-width: 800px;
+    max-height: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #df84144f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Signin {
+    padding: 45px;
+}
+
+.Signup h2, .Signin h2 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex-basis: calc(50% - 30px); /* Половина ширини з врахуванням відступу */
+}
+
+.form-group-signin{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+#genderform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#genderform select{
+    width: 110px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #d16603;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: KyivTypeSerif-Regular;
+    font-size: 15px;
+}
+
+.Signup input[type="text"],
+.Signup input[type="date"],
+.Signup input[type="email"],
+.Signup input[type="password"]{
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #d76d0a;
+}
+
+.Signup button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #d16603;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: KyivTypeSerif-Regular;
+    transition: background-color 0.3s;
+}
+
+.Signup button[type="submit"]:hover {
+    background-color: #874600;
+}
+
+
+.GoToSignIn {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #007bff; 
+    text-decoration: underline;
+    font-family: KyivTypeSerif-Regular;
+}
+
+.Signup .buttontext, .Signin .buttontext{
+    font-family: KyivTypeSerif-Regular;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-group-signin {
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group-signin label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group-signin input[type="email"],
+.form-group-signin input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #d16603;
+}
+
+.Signin button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #d76d0a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: KyivTypeSerif-Regular;
+    margin-top: 10px;
+}
+
+.Signin button[type="submit"]:hover {
+    background-color: #874600;
+}
+
+.Signin .buttontext, .Signup .buttontext {
+    margin-top: 15px;
+}
+
+.GoToSignUp {
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.GoToSignUp:hover {
+    text-decoration: underline;
+}
